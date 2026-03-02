@@ -5,6 +5,11 @@ import pygame
 from itertools import cycle
 from pygame.locals import *
 
+try:
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+except:
+    pass
+
 fps = 30
 screen_width = 288
 screen_height = 512
