@@ -50,7 +50,9 @@ for char_item in user_text:
 #done 
 
 #startswith()
-#rjust
+user_text = input("Enter text: ")
+prefix_text = input("Enter prefix: ")
+#Add loop
 
 #count
 user_text = input("Enter text: ")
@@ -61,3 +63,4 @@ char_total = 0
 for char_item in user_text:
     if char_item == search_char:
         char_total += 1
+#done
