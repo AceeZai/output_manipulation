@@ -1,9 +1,41 @@
-#Use index
-#While loop
-#Identify the variable
 #rstrip()
 user_text = input("Enter text: ")
 last_index = len(user_text) - 1
+#Use while loop
+while last_index >= 0 and user_text[last_index] == " ":
+    last_index -= 1
+#identify the variables and within the given index 
+trimmed_text = user_text[:last_index + 1]
+print(trimmed_text)
+#done
+
+#removesuffix()
+user_text = input("Enter text: ")
+suffix_text = input("Enter suffix: ")
+#Use len() function
+suffix_len = len(suffix_text)
+#if else loop
+if user_text[-suffix_len:] == suffix_text:
+    result_text = user_text[:-suffix_len]
+else:
+    result_text = user_text
+
+print(result_text)
+#done
+
+#upper()
+user_text = input("Enter text: ")
+upper_text = ""
+#ascii code stores value or digits for every character
+for char_item in user_text:
+    ascii_code = ord(char_item)
+#Use True or False for executing 
+    if 97 <= ascii_code <= 122:
+        upper_text += chr(ascii_code - 32)
+    else:
+        upper_text += char_item
+
+print(upper_text)
 
 
 
