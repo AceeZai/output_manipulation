@@ -1,3 +1,4 @@
+#output manipulation
 #Program 1
 #Ask for name with leading spaces. ex; ____ Acee Zai Mendez
 full_name = input("Enter your full name: ")
